@@ -39,4 +39,33 @@ print(sorted_array(myarr, 7))  # Output should be 3
 
 # ===================================== Solution to Exercise 2 =====================================
 
-# ====================================================================================================
+def find_minimum_in_rotated_array(arr):
+    first = 0
+    last = len(arr) - 1
+
+    # If the array is not rotated (or just has one element)
+    if arr[first] < arr[last]:
+        return arr[first]
+
+    while first <= last:
+        midpoint = (first + last) // 2
+
+        # Check if the midpoint is the minimum
+        if arr[midpoint] > arr[midpoint + 1]:
+            return arr[midpoint + 1]
+        if arr[midpoint] < arr[midpoint - 1]:
+            return arr[midpoint]
+
+        # Decide which half to search
+        if arr[midpoint] > arr[last]:
+            first = midpoint + 1
+        else:
+            last = midpoint - 1
+
+    return None
+
+# Example usage
+array = [4, 5, 6, 1, 2, 3]
+print(find_minimum_in_rotated_array(array))  # Output should be 
+
+# ===================================================================================================
