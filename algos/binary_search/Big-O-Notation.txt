@@ -1,0 +1,13 @@
+>BIG O Notation
+    Big O Notation tells how fast an Algorithm is.
+
+#NOTE: Algorithms running times grow at different rates.
+
+#NOTE2:
+    Big O notation tells you how fast an algorithm is. For
+    example, suppose you have a list of size n. Simple search
+    needs to check each element, so it will take n operations. The
+    run time in Big O notation is O(n). Where are the seconds?
+    There are none—Big O doesn’t tell you the speed in seconds.
+    Big O notation lets you compare the number of operations. It
+    tells you how fast the algorithm grows.
