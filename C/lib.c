@@ -8,7 +8,7 @@ int main() {
 
 
     printf("Enter your firstname:\n ");
-    scanf("%s",&name);                      //Scanf allows users to input something into the program
+    fgets(name,30,stdin);                      //Scanf allows users to input something into the program
 
 
     printf("Enter your age: ");
